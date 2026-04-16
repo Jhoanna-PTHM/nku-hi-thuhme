@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-52gblc!5#-i1^p22oj&j!5sqb+_7v5@s)9b4il%m-p5ezlq+41
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['78.12.11.179','localhost']
 
 
 # Application definition
@@ -118,8 +118,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
